@@ -11,6 +11,10 @@
   </div>
 
   <div class="group">
+    <%= select_tag(:category, options_for_select(@categories), :prompt => "选择类别") %>
+  </div>
+
+  <div class="group">
     <%= f.input :quantity %>
   </div>
 

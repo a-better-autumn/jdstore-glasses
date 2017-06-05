@@ -15,3 +15,8 @@ u.password_confirmation = "123456"   # 最少要六码
 
 u.is_admin = true
 u.save
+
+Category.create(name: "男士眼镜")
+Category.create(name: "女士眼镜")
+Category.create(name: "儿童眼镜")
+Category.create(name: "太阳镜")
