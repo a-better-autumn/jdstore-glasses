@@ -55,12 +55,12 @@ html {
    bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
-   height: 100px;
-   
-   margin: 0 -15px;
+   height: 80px;
+   background-color: black;
+
 
    p {
-      color: black;
-     margin-top: 30px;
-   }
+      color: white;
+      margin-top: 20px
+    }
   }
