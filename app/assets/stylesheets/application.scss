@@ -18,6 +18,21 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
+html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
+
+
+
+
 //---------Box---------
 
 .box {
@@ -28,3 +43,24 @@
 .container{
      margin-top: 80px;
 }
+
+.main {
+  margin-bottom: 80px;
+}
+
+//--------Footer--------
+
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 100px;
+   
+   margin: 0 -15px;
+
+   p {
+      color: black;
+     margin-top: 30px;
+   }
+  }
