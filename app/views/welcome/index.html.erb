@@ -1,1 +1,149 @@
-<h1>Hello World</h1>
+<div class="carousel">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+      <div class="item active">
+       <a href="#">
+         <%= image_tag "header1.jpg" %>
+        <div class="carousel-caption"></div>
+       </a>
+      </div>
+      <div class="item">
+       <a href="#">
+         <%= image_tag "header2.jpg" %>
+        <div class="carousel-caption"></div>
+       </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <%= image_tag "header3.jpg" %>
+          <div class="carousel-caption"></div>
+        </a>
+      </div>
+    </div>
+
+   <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+   </a>
+   <a class="carousel-control right" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+   </a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-4 ">
+    <div class="thumbnail">
+      <a href="/products">
+        <%= image_tag "thumb01.jpg" %>
+      </a>
+      <div class="caption">
+        <h3>NEW FOR 2017</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 ">
+    <div class="thumbnail">
+      <a href="/products">
+        <%= image_tag "thumb02.jpg" %>
+      </a>
+      <div class="caption">
+        <h3>BEST SELLERS</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 ">
+    <div class="thumbnail">
+      <a href="/products">
+        <%= image_tag "thumb03.jpg" %>
+      </a>
+      <div class="caption">
+        <h3>CUSTOM SUNGLASSES</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="black-bg">
+  <div class = "container-fluid">
+    <div class="row">
+      <div class="col-sm-3 ">
+
+        <div class="artist">
+          <div class="artist__thumbnail">
+            <img class="artist__blur" src="http://www.fictionphile.com/wp-content/uploads/2013/01/friedrich-nietzsche-1-300x273.jpg">
+            <img class="artist__image" src="http://www.fictionphile.com/wp-content/uploads/2013/01/friedrich-nietzsche-1-300x273.jpg">
+            <div class="artist__ring"></div>
+            <div class="artist__ring artist__ring--outer"></div>
+          </div>
+          <div class="artist__label">
+            <p class="ffont">A pair of powerful spectacles has sometimes sufficed to cure a person in love.</p>
+            <p class="capital">Friedrich Nietzsche</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3 ">
+
+        <div class="artist">
+          <div class="artist__thumbnail">
+            <img class="artist__blur" src="http://www.mrbradgoreski.com/wp-content/uploads/2013/11/Brad-Goreski-Annex-Magazine-Cover-Editorial-Anniversary-Issue-2013_011-620x542.jpg">
+            <img class="artist__image" src="http://www.mrbradgoreski.com/wp-content/uploads/2013/11/Brad-Goreski-Annex-Magazine-Cover-Editorial-Anniversary-Issue-2013_011-620x542.jpg">
+            <div class="artist__ring"></div>
+            <div class="artist__ring artist__ring--outer"></div>
+          </div>
+          <div class="artist__label">
+            <p class="ffont">Putting on a new pair of sunglasses is a simple way to completely transform your look — just like a new hairstyle.</p>
+            <p class="capital">Brad Goreski</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3 ">
+
+        <div class="artist">
+          <div class="artist__thumbnail">
+            <img class="artist__blur" src="https://s-media-cache-ak0.pinimg.com/originals/02/6e/f7/026ef73df0195dde152c674033edc9cf.jpg">
+            <img class="artist__image" src="https://s-media-cache-ak0.pinimg.com/originals/02/6e/f7/026ef73df0195dde152c674033edc9cf.jpg">
+            <div class="artist__ring"></div>
+            <div class="artist__ring artist__ring--outer"></div>
+          </div>
+          <div class="artist__label">
+            <p class="ffont">My glasses say a lot about me because I think me in a pair of sunglasses is an image that a lot of people would recognise.</p>
+            <p class="capital">Victoria Beckham</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3 ">
+
+        <div class="artist">
+          <div class="artist__thumbnail">
+            <img class="artist__blur" src="https://www.locusmag.com/2002/Issue05/tamora.jpg">
+            <img class="artist__image" src="https://www.locusmag.com/2002/Issue05/tamora.jpg">
+            <div class="artist__ring"></div>
+            <div class="artist__ring artist__ring--outer"></div>
+          </div>
+          <div class="artist__label">
+            <p class="ffont">I wear glasses because I have better things to do with my magic than fixing my vision when ordinary glass will do.</p>
+            <p class="capital">Tamora Pierce</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h2>网上预订</h2>
+  <br>
+  <p>活动期间网上预订，即可体验尊贵独有的视力检查服务</p>
+  <br>
+  <p><a class="btn btn-lg btn-warning" href="/products">立即选购</a></p>
+</div>
