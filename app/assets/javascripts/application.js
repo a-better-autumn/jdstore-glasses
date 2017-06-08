@@ -20,6 +20,6 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $('#myCarousel').carousel({interval: 2000});
+  $('#myCarousel').carousel({interval: 5000});
 
 });
