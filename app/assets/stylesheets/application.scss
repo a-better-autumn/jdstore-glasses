@@ -31,6 +31,7 @@
 
 .container{
      margin-top: 50px;
+     margin-bottom: 120px;
 }
 
 //--------Footer--------
@@ -41,8 +42,7 @@ html {
  }
 
  body {
-   /* Margin bottom by footer height */
-   margin-bottom: 50px;
+  background-color: #EEEEEE;
  }
 
 .footer {
@@ -50,7 +50,7 @@ html {
    bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
-   height: 80px;
+   height: 85px;
    background-color: #212121;
 
 
