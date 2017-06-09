@@ -19,7 +19,21 @@
 //= require bootstrap/carousel
 //= require_tree .
 
+//----------Carousel-------------
 $(document).ready(function() {
   $('#myCarousel').carousel({interval: 2000});
 
 });
+
+//------------Carts--------------
+// Remove Items From Cart
+$('a.remove').click(function(){
+  event.preventDefault();
+  $( this ).parent().parent().parent().hide( 400 );
+
+})
+
+// Just for testing, show all items
+  $('a.btn.continue').click(function(){
+    $('li.items').show(400);
+  })
