@@ -1,28 +1,33 @@
-
-<div class="row">
-  <div class='col-md-6 preview'>
+<!-- 页面左侧产品图 -->
+<section class="col-xs-12 col-md-6 product-top">
+  <div class='col-xs-12 col-md-6'>
     <% if @product.image.present? %>
       <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
     <% else %>
       <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
     <% end %>
   </div>
-  <div class="col-md-6">
-    <div class="product-info-section">
-      <h1 class="produc-title"><%= @product.title %></h1>
-      <hr>
-      <p class="price">¥ <%= @product.price %></p>
-      <p>库存：<%= @product.quantity %></p>
-      <p>邮费：免费</p>
-      <hr>
-      <p><%= simple_format(@product.description) %></p>
-      <hr>
-      <div class="">
-        <% if @product.quantity.present? && @product.quantity > 0 %>
-        <%= link_to("加入购物车", add_to_cart_product_path(@product),method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
-        <% else %>
-        已销售一空，无法购买
-        <% end %>
-    </div>
-  </div>
-</div>
+</section>
+
+<!-- 页面右侧的产品主要信息和功能 -->
+<section class="col-xs-12 col-md-6 product-top product-main-box">
+  <!-- 产品标题 -->
+  <h1 class="produc-title">
+    <%= @product.title %>
+  </h1>
+
+  <hr>
+    <h3>$ <%= @product.price %></h3>
+    <br>
+    <p>库存：<%= @product.quantity %></p>
+    <br>
+    <p>邮费：免费</p>
+  <hr>
+
+  <p><%= simple_format(@product.description) %></p>
+    <% if @product.quantity.present? && @product.quantity > 0 %>
+    <%= link_to("加入购物车", add_to_cart_product_path(@product),method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
+    <% else %>
+    已销售一空，无法购买
+    <% end %>
+</section>

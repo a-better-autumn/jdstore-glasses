@@ -2,13 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-page{
-  background-color: #EEEEEE;
-  background-repeat: repeat;
-  margin-top:-20px;
-  margin-left:-15px;
-  margin-right:-15px;
-  padding-top:60px;
-  padding-left: 30px;
-  padding-bottom: 365px;
+.product-main-box{
+  text-align: left;
+}
+
+.product-top{
+  padding-top: 50px;
 }
