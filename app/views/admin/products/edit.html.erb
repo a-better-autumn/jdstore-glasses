@@ -24,11 +24,17 @@
 
     <% if @product.image.present? %>
       <span>目前商品图</span> <br>
-      <%= image_tag(@product.image.thumb.url) %>
-    <% end %>
+      <% @product.photos.each do |p| %>
+         <%= image_tag p.avatar.thumb.url %><br>
+      <% end %>
+
+
+
 
     <div class="group">
-      <%= f.input :image, as: :file %>
+      <%= f.input :image, as: :file, label: "详情图" %>
+      <%= f.label :avatar %><br>
+      <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
     </div>
 
   <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
