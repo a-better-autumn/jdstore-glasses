@@ -1,3 +1,151 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+$fontSans : 'Montserrat', sans-serif;
+$fontSerif : 'Droid Serif', serif;
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+*{ box-sizing:border-box;}
+
+ img {
+   max-width:100%;
+ }
+.cf:before,.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+.wrap {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5% 0;
+  margin-bottom: 5em;
+
+}
+
+.projTitle {
+  font-family: $fontSans;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em 0;
+  border-bottom: 1px solid #dadada;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  span {
+    font-family: $fontSerif;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #777;
+
+  }
+}
+// CART HEADER
+.heading {
+  padding: 1em 0;
+  border-bottom: 1px solid #D0D0D0;
+
+  h1 {
+   font-family: $fontSerif;
+   font-size: 2em;
+   float: left;
+  }
+  a.continue {
+    &:link , &:visited {
+      text-decoration: none;
+      font-family: $fontSans;
+      letter-spacing: -.015em;
+      font-size: .75em;
+      padding: 1em;
+      color: #fff;
+      background: #82ca9c;
+      font-weight: bold;
+      border-radius: 50px;
+    float: right;
+      text-align: right;
+       @include transition(all, .25s, linear);
+    }
+    &:after {
+      content: "\276f";
+      padding: .5em;
+      position: relative;
+      right:0;
+       @include transition(all, .15s, linear);
+
+    }
+    &:hover , &:focus, &:active {
+      background: #f69679;
+
+      &:after {
+        right: -10px;
+      }
+    }
+  }
+}
+
+.bttn {
+     &:link , &:visited {
+      text-decoration: none;
+      font-family: $fontSans;
+      letter-spacing: -.015em;
+      font-size: 1em;
+      padding: 1em 3em;
+      color: #fff;
+      background: #82ca9c;
+      font-weight: bold;
+      border-radius: 50px;
+    float: right;
+      text-align: right;
+       @include transition(all, .25s, linear);
+    }
+      &:after {
+      content: "\276f";
+      padding: .5em;
+      position: relative;
+      right:0;
+       @include transition(all, .15s, linear);
+
+    }
+    &:hover , &:focus, &:active {
+      background: #f69679;
+        &:after {
+        right: -10px;
+      }
+    }
+
+  .promoCode & {
+    font-size: .85em;
+    paddding: .5em 2em;
+  }
+}
+
+@media only screen and (max-width:39.375em){
+
+.wrap {
+  width: 98%;
+  padding: 2% 0;
+}
+.projTitle{
+  font-size: 1.5em;
+  padding: 10% 5%;
+}
+.heading {
+  padding: 1em;
+  font-size: 90%;
+}
+
+  a.bttn.continue {
+width: 100%;
+text-align: center;
+}
+}

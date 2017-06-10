@@ -19,7 +19,15 @@
 //= require bootstrap/carousel
 //= require_tree .
 
+//----------Carousel-------------
 $(document).ready(function() {
   $('#myCarousel').carousel({interval: 2000});
 
 });
+
+//------------Carts--------------
+
+// Just for testing, show all items
+  $('a.btn.continue').click(function(){
+    $('li.items').show(400);
+  })

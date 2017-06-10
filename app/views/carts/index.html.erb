@@ -1,19 +1,26 @@
-<div class="row">
+<div class="wrap cf">
   <div class="col-md-12">
 
-     <%= link_to("清空购物车", clean_carts_path ,
-                 method: :delete , class: "pull-right",
-                 style: "text-decoration: underline;",
-                 data: { confirm: "你确定要清空整个购物车吗？"} )%>
+  <h1 class="projTitle">Clear Spectcles Shopping Cart</h1>
 
-    <h2> 购物车 </h2>
+  <div class="heading cf">
+    <h1>My Cart</h1>
+      <a href="/products" class="continue">Continue Shopping</a>
+  </div>
 
-    <table class="table table-bordered">
+    <table class="table table-striped">
       <thead>
         <tr>
-          <th colspan="2">商品资讯</th>
+          <th>商品资讯</th>
           <th>单价</th>
-          <th>数量</th>
+          <th>库存数量</th>
+          <th>购买数量</th>
+          <th>
+            <%= link_to("清空购物车", clean_carts_path ,
+                        method: :delete , class: "pull-right",
+                        style: "text-decoration: underline;",
+                        data: { confirm: "你确定要清空整个购物车吗？"} )%>
+          </th>
         </tr>
       </thead>
       <tbody>
