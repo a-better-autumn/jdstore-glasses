@@ -49,14 +49,9 @@
               <% end %>
             </td>
             <td>
+              <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
                 <i class="fa fa-trash"></i>
-
-                <!-- <div class="cartSection removeWrap">
-                  <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
-                  <% end %>
-                  <a href="#" class="remove">x</a>
-                </div> -->
-
+              <% end %>
             </td>
           </tr>
         <% end %>
