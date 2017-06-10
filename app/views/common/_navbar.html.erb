@@ -16,6 +16,7 @@
                       <%= link_to(category.name, products_path(category: category.name)) %>
                     </li>
                   <% end %>
+                </ul>
 
               <ul class="nav navbar-nav navbar-left">
                <%= form_tag search_products_path, :method => :get do %>
@@ -31,7 +32,6 @@
              </ul>
 
              <ul class="nav navbar-nav navbar-right">
-
               <li>
                 <%= link_to carts_path do %>
                   购物车 <i class="fa fa-shopping-cart"> </i> (<%= current_cart.products.count %>)
