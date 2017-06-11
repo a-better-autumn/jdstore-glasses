@@ -18,7 +18,6 @@
 @import "bootstrap";
 @import "font-awesome";
 
-
 //-------Navbar---------
 
 .navbar{
@@ -27,8 +26,7 @@
   margin-left: -15px;
 }
 
-.navbar-left{
-  float: right;
+.navbar-search{
   margin-top: 8px;
   width: 220px;
 }
@@ -36,10 +34,6 @@
 .search-id {
   width: 200px;
   padding-top: 7px;
-}
-
-.input-group {
-  left: 410px;//搜索栏距离左边距离
 }
 
 //---------Product---------
